@@ -68,7 +68,7 @@ $bgcolor: #1e90ff;
     margin-left: 250px;
     background-color: white;
     float: left;
-    @media all and s(min-width: 1280px) {
+    @media all and (min-width: 1280px) {
       .avengers {
        width:50%;
        margin-left: 0;
