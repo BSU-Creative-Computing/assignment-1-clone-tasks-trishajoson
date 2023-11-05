@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #eeeeee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  background-color: #1e90ff;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style for the navigation links */
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 3px;
+  text-decoration: none;
+}
+
+/* Style for the search box */
+.search-box {
+  display: inline-block;
+}
+
+.search-input {
+  width: 250px;
+  padding: 8px;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+
+.logo {
+  font-size: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* Style for the left-aligned "Home" link */
+.left-link {
+  float: left;
+}
+
+.right-links {
+  float: right;
+  font-size: 14px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-top: 5px;
+}
+
+/*Code for avengers*/
+.big-container {
+  padding-top: 20px;
+}
+
+.avengers {
+  box-sizing: border-box;
+  width: 29%;
+  margin-left: 250px;
+  background-color: white;
+  float: left;
+}
+
+.avengers:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.avengers img {
+  max-width: 100%;
+}
+
+.avengers h3 {
+  margin-top: 0; /* Reset margins for the h2 element */
+  font-weight: bolder;
+  line-height: 1.6;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.avengers p {
+  font-size: 10px;
+  line-height: 1.6;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.info, .grid-item .info2 {
+  background-color: #1e90ff;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  font-size: 10px;
+  float: right; /* Align the button to the right */
+}
+
+.grid-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 190px);
+  max-width: 500px;
+  grid-gap: 10px; /*Creates gap between grid items. */
+  height: calc(100vh - 100px);
+  align-self: center;
+  position: relative;
+  top: 0;
+  left: 1%;
+  width: 50%;
+  height: 100%;
+}
+
+.grid-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  background-color: white;
+  box-sizing: border-box; /* Make sure that the padding and border of the grid items are included in their width and height. */
+  padding: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item h3 {
+  margin-top: 0; /* Reset margins for the h2 element */
+  font-weight: bolder;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.grid-item p {
+  font-size: 9.8px;
+  line-height: 1.6;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.grid-item .info2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}/*# sourceMappingURL=movie.css.map */
