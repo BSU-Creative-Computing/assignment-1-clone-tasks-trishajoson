@@ -14,7 +14,6 @@ html {
   overflow: hidden;
   text-align: center;
   padding: 10px;
-  margin-right: 0px;
 }
 
 /* Style for the navigation links */
@@ -31,6 +30,7 @@ html {
   display: inline-block;
 }
 
+/* Style for the search input field */
 .search-input {
   width: 250px;
   padding: 8px;
@@ -69,6 +69,7 @@ html {
   float: left;
 }
 
+/* Clear the float after the last Avenger profile */
 .avengers:after {
   content: "";
   display: block;
@@ -94,6 +95,7 @@ html {
   font-weight: bold;
 }
 
+/* Style for the "Info" button */
 .info, .grid-item .info2 {
   background-color: #1e90ff;
   padding: 8px;
@@ -228,7 +230,7 @@ footer {
     float: left;
   }
   .navbar {
-    margin-right: -10px;
+    margin-right: -12px;
   }
 }
 @media screen and (max-width: 1280px) and (min-width: 1025px) {

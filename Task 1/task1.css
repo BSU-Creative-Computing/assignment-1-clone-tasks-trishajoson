@@ -1,7 +1,7 @@
+/*To remove any padding or margin*/
 *{
     padding: 0;
     margin:0;
-
 }
 header{
     padding: 10px;
@@ -11,26 +11,30 @@ header{
     max-width: 100%;
     height: auto;
 }
+/*To make background color of the page change*/
 html{
     background-color: rgb(231, 225, 225);
 }
 body{
     background-color: white;
 }
+/*Style for paragraph*/
 p{
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
     padding: 10px;
+    line-height: 1.6;
 }
-
+/*Style for footer*/
 footer{
     background-color: black;
     color:white;
     padding:30px;
     margin-bottom: 0;
+    text-align: center;
    
 }
-
+/*Media query for 1024px*/
 @media (min-width:1024px){
     body{
         margin-right: 200px;
@@ -44,7 +48,7 @@ footer{
     
 
 }
-
+/*Media query for between 800px and 1023px*/
 @media (min-width: 800px ) and (max-width: 1023px){
     .container{
         display: grid;
@@ -54,7 +58,7 @@ footer{
         padding: none;
     }
 }
-
+/*Media query for between 481px and 799px*/
 @media (min-width: 481px) and (max-width:799px){
     .container{
         display: grid;

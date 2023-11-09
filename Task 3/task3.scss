@@ -1,3 +1,4 @@
+/*Create variables*/
 $color1:#4e89ae;
 $color2:#43658b;
 $color3:#ed6663;
@@ -21,7 +22,7 @@ html{
     align-items: center;
   }
 
-
+/*Header Styling*/
 header{
     background-color: $background-color;
     width: 100%;
@@ -31,19 +32,23 @@ header{
 body{
     min-height: 100vh;
 }
+
+/*Styling for footer*/
 footer {
     background-color: $background-color;
     height: $footer-height;
     
+    
 }
-
+/*Styles for Row container*/
 .row_container{
     margin-top: 40px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     
 }
-.row1:hover,.row2:hover, .row3:hover, .row4:hover {
+/*Individual Rows styling*/
+.row1:hover,.row2:hover, .row3:hover, .row4:hover { /*Hover effect*/
     background-color: $hover-color;
   }
 
@@ -65,10 +70,10 @@ footer {
     background-color: $color4;
 }
 
-/* Circles and rows styling */
+/* Circles styling */
 .circle_container{
     grid-template-rows: 1fr;
-    padding: 10px;
+    padding: 75px;
     @include center-element;
 }
 .circle1,
@@ -104,7 +109,7 @@ footer {
   background-color: $color4;
 }
 
-
+/*Create a mixin for image in the header*/
 @mixin header-image-breakpoints($image-url-200, $image-url-300, $image-url-400) {
     @media (max-width: 480px) {
       header {
@@ -134,12 +139,14 @@ footer {
     }
     }
   }
-  @include header-image-breakpoints('https://via.placeholder.com/200', 'https://via.placeholder.com/300', 'https://via.placeholder.com/400');
+  @include header-image-breakpoints("https://via.placeholder.com/200","https://via.placeholder.com/300", "https://via.placeholder.com/400");
 
+  /*Another media query for the circles*/
   @media screen and (max-width:620px) {
     .circle_container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding:20px;
     }
   }

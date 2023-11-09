@@ -9,36 +9,37 @@ $bgcolor: #1e90ff;
     background-color: #eeeeee;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
+
  /* Style for the navigation bar */
  .navbar {
-    background-color: $bgcolor;
-    overflow: hidden;
-    text-align: center;
-    padding:10px;
-    margin-right:0px;}
+  background-color:#1e90ff;
+  overflow: hidden;
+  text-align: center;
+  padding:10px;
+}
 
 /* Style for the navigation links */
 
 .navbar a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 3px;
-    text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 3px;
+  text-decoration: none;
 }
 
 
 /* Style for the search box */
 .search-box {
-    display: inline-block;
-    
+  display: inline-block;
+  
 }
-
+/* Style for the search input field */
 .search-input {
-    width: 250px;
-    padding: 8px;
-    margin-right: 20px;
-    margin-top:7px;
+  width: 250px;
+  padding: 8px;
+  margin-right: 20px;
+  margin-top:7px;
 }
 .logo{
     font-size: 22px;
@@ -71,6 +72,8 @@ $bgcolor: #1e90ff;
     float: left;
     
 }
+
+/* Clear the float after the last Avenger profile */
 .avengers:after {
     content: "";
     display: block;
@@ -97,7 +100,7 @@ $bgcolor: #1e90ff;
     font-weight: bold;
    
 }
-
+/* Style for the "Info" button */
 .info{
     background-color: $bgcolor;
     padding: 8px;
@@ -236,7 +239,7 @@ footer {
       float: left;
     }
     .navbar{
-      margin-right: -10px;
+      margin-right: -12px;
     }
 
   }
